@@ -16,3 +16,7 @@ print(seconds_per_day / seconds_per_hour);
 #정수(//)나눗셈을 이용해서 seconds_per_day를 seconds_per_hour로 나누어라
 
 print(seconds_per_day // seconds_per_hour);
+print(float('1.0e4'));
+
+a ='I love you!'
+print(a[-1::-1]);
