@@ -23,3 +23,19 @@ print(tempStr.title());
 surprise = ['Groucho', 'Chico', 'Harpo'];
 # 3.9 리스트의 마지막 요소를 소문자로 역전 시킨후, 단어를 역전시킨 후 첫글자를 대문자로 바꿔라
 
+print(surprise[2].lower()[::-1].capitalize());
+# 3.10 f2e 딕셔너리
+f2e = {
+    'dog': 'chien',
+    'cat': 'chat',
+    'walrus': 'morse'
+}
+# 영어 walrus를 프랑스어로 출력
+print(f2e['walrus']);
+e2f = {};
+for key, value in f2e.items():
+    tempDict = {
+        value: key
+    }
+    e2f.update(tempDict)
+print(e2f);
