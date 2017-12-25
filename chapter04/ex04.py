@@ -51,3 +51,12 @@ edit_story(stairs, lambda string: string.capitalize()+'!')
 
 a = "abcd";
 print(a[::-1]);
+
+animal = 'fruitbat'
+def change_and_print_global():
+    global animal # using global variable
+    animal = 'sex'
+    print('inside valuable = '+animal);
+change_and_print_global();
+print(animal);
+
