@@ -1,41 +1,22 @@
 # -*- coding: utf-8 -*- 
-items = ['a','b','c'];
-for a in items:
-    print(a);
+# 1시간은 몇 초인가? 1시간은 60분이고, 1분은 60초이다. 
+print(60 * 60);
 
-print(items[::-1]);
+# 계산한 결과를 seconds_per_hour변수에 저장하라
+seconds_per_hour = 60 * 60;
 
-string = 'abcdefg';
-print(string[::]);
+#1일은 몇 초인가 seconds_per_day변수 저장하라.
 
-marxes = ['Groucho', 'Chico', 'Harpo'];
-print(','.join(marxes));
+seconds_per_day = seconds_per_hour * 60;
 
-# sorted와 sort 차이 
-# sort()는 리스트 자체를 정렬
-# sorted()는 정렬된 복사본 반환
+#부동수수점을 사용해서 seconds_per_day를 seconds_per_hour로 나누어라
 
-sorted_marxes = sorted(marxes);
-print(sorted_marxes);
+print(seconds_per_day / seconds_per_hour);
 
-# 리스트에서 = 는 깊은복사이다. 2개의 변수가 하나의 객체를 가르키는 느낌 하지만 b = a.copy(), c = list(a), d = a[:] 이것들은 값복사
-# 하나가 변경되면 다른 변수에 담겨져있는 리스트도 변경된다.
-a = [1,2,3];
-b = a;
-a[0] = 'surprise'
-print(b);
+#정수(//)나눗셈을 이용해서 seconds_per_day를 seconds_per_hour로 나누어라
 
-# tuple unpacking
-marx_tuple = ('Groucho', 'Chico', 'Harpo');
-a,b,c = marx_tuple;
-print(b)
+print(seconds_per_day // seconds_per_hour);
+print(float('1.0e4'));
 
-# dictionary update
-# 만약 두개의 dict을 병합하려 할때 키가 겹친다면 두 번째 dict에 있는 값으로 병합된다.
-first = {'a': 1, 'b': 2}
-second = {'b': 'unhappy'}
-first.update(second)
-print(first)
-
-# set은 내가아는 집합과 유사
-# intersection, union, difference, exclusive, etc 사용가능
+a ='I love you!'
+print(a[-1::-1]);
